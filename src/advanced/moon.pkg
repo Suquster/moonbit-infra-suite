@@ -1,0 +1,18 @@
+// Package: Suquster/moonbit-infra-suite/src/advanced
+//
+// Houses frontier algorithms — Rust `pathfinding` crate does NOT ship them
+// (Requirement R18, Milestone 4 · tasks.md 35/36/37):
+//
+//   * `ch.mbt`   — Contraction Hierarchies (Geisberger et al. 2008)
+//   * `jps.mbt`  — Jump Point Search (Harabor & Grastien 2011)
+//   * `alt.mbt`  — A* + Landmarks + Triangle inequality (Goldberg & Harrelson 2005)
+//
+// The `@core` import is used for `Weight`/`PQueue` facilities.
+import {
+  "Suquster/moonbit-infra-suite/src/core",
+}
+
+// Blackbox tests compare CH/ALT against baseline Dijkstra.
+import {
+  "Suquster/moonbit-infra-suite/src/directed" @dir,
+} for "test"

@@ -1,0 +1,18 @@
+// Package declaration for property-based tests (PBT).
+//
+// This test package hosts:
+//   - `gen.mbt`                         — reusable random-graph generators
+//     (nonneg / DAG / negative-cycle)
+//   - `prop_NN_*.mbt` (created in 27.2+) — the 12 correctness properties
+//     defined in design.md §6.
+//
+// NOTE: the local default alias of this folder is `pbt`; to avoid collisions,
+// library packages are imported under short aliases (e.g. `@dir`).
+import {
+  "Suquster/moonbit-infra-suite/src/advanced" @adv,
+  "Suquster/moonbit-infra-suite/src/core",
+  "Suquster/moonbit-infra-suite/src/directed" @dir,
+  "Suquster/moonbit-infra-suite/src/proofs",
+  "Suquster/moonbit-infra-suite/src/undirected" @und,
+  "Suquster/moonbit-infra-suite/src/unweighted" @uw,
+}

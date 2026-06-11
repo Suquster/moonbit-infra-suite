@@ -1,0 +1,7 @@
+// Playground WASM module entry point.
+// Exports `solve_grid` to JS for interactive pathfinding.
+import {
+  "Suquster/moonbit-infra-suite/src/advanced" @adv,
+  "Suquster/moonbit-infra-suite/src/directed" @dir,
+  "Suquster/moonbit-infra-suite/src/unweighted" @uw,
+}

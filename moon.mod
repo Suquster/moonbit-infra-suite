@@ -1,0 +1,28 @@
+name = "Suquster/moonbit-infra-suite"
+
+version = "0.0.3"
+
+readme = "README.md"
+
+repository = "https://github.com/Suquster/moonbit-infra-suite"
+
+license = "Apache-2.0"
+
+keywords = [
+  "pathfinding",
+  "graph",
+  "algorithms",
+  "dijkstra",
+  "astar",
+  "bfs",
+  "jps",
+  "runtime-contracts",
+  "executable-docs",
+  "osc-2026",
+]
+
+description = "A MoonBit pathfinding and graph algorithms library with executable documentation, runtime-checked proof predicates, and multi-backend verification gates. Built for OSC 2026."
+
+options(
+  homepage: "https://github.com/Suquster/moonbit-infra-suite#readme",
+)
